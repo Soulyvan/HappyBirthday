@@ -48,6 +48,8 @@
             position: absolute;
             color: #FFD700;
             font-size: 20px;
+            transform-origin: center;
+            animation: growShrink 2s infinite alternate; /* Animation growShrink */
         }
 
         /* Positionne les étoiles à des endroits différents */
@@ -82,6 +84,17 @@
                 transform: translateY(-10px);
             }
         }
+
+        /* Animation growShrink */
+        @keyframes growShrink {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.5);
+            }
+        }
+        
     </style>
 </head>
 <body>
