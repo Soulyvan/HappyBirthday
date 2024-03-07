@@ -97,12 +97,12 @@
         <i class="bi bi-stars star-absolute"></i>
 
         <h1 class="display-4">Joyeux Anniversaire !</h1>
-        <img src="yass.jpg" id="photo" width="150" height="250" alt="Photo par défaut">
+        <img src="ode.jpg" id="photo" width="150" height="250" alt="Photo par défaut">
         <p class="lead" id="birthdayMessage">
-            Chère Yassine, que cette journée spéciale soit remplie de joie et de bonheur!
+            Chère Odeline, que cette journée spéciale soit remplie de joie et de bonheur!
         </p>
         <p id="additionalText">
-            Joyeux anniversaire à mon ange et ma blanche neige préférée.
+            Joyeux anniversaire à cette fille assez particulière en bon nombre de point.
             Que cette année t'apporte tout ce que ton cœur désire.
         </p>
 
@@ -116,17 +116,13 @@
         // Fonction appelée lors du clic sur le bouton
         function maFonction() {
             // Utilise l'API Text-to-Speech pour lire le message
-            var message = "Hello Yassine, mon ange, blanche neige, autant de nom pour te décrire. Aujourd'hui, askip c'est ton anniversaire. Ne t'offrant pas de cadeau tout de suite, j'ai voulu te le souhaiter d'une manière un peu spéciale. Non pas en musique, mais avec ce beau métier là. J'espère que ça te plaira. Franchement, tu es une belle personne, souriante, avec un beau et bon cœur, jusqu'à même vouloir m'aider à chanter hooo, mais que c'est vraiment, je t'assure que ça ne donne qu'envie de plus t'aimer. Bon bon bon, je ne te souhaite que le meilleur en vrai, tu as déjà tout je dirai, tu es belle, sympathique, posée, intelligente, bon l'argent vient au fur et à mesure et par-dessus tout tu es chrétienne. Que demander de plus ? Joyeux anniversaire Yassine, bisous.";
+            var message = "Odeline, Odeline, Odeline. Je t'ai appelé combien de fois ? Donc aujourd'hui c'est ton anniversaire, si ce robot pouvait chanter, je l'aurai fait chanter pour toi. Malheureusement, ce n'est pas le cas, et je ne sais moi meme pas bien chanter. Sans trop de bla bla, je te souhaite joyeux anniversaire. Et en vrai, je ne te souhaite que le meilleure. Joyeux anniversaire encore.";
             
             // Crée une instance de l'objet SpeechSynthesisUtterance
             var utterance = new SpeechSynthesisUtterance(message);
-            // Crée une instance de l'objet SpeechSynthesisUtterance
-            var utterance2 = new SpeechSynthesisUtterance("Ah oui, tu dois etre fatiguée de ma voix, souffre avec celle-ci un peu.");
             
             // Utilise l'objet SpeechSynthesis pour lire le message
             window.speechSynthesis.speak(utterance);
-
-            window.speechSynthesis.speak(utterance2);
         }
 
         // Ajoute une animation au fur et à mesure
